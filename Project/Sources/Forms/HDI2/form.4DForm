@@ -1,0 +1,180 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 864,
+					"height": 665,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"ViewProArea": {
+					"type": "view",
+					"top": 145,
+					"left": 29,
+					"width": 845,
+					"height": 515,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "object",
+					"borderStyle": "none",
+					"method": "ObjectMethods/ViewProArea.4dm",
+					"events": [
+						"onVPReady"
+					],
+					"userInterface": "none",
+					"withFormulaBar": true
+				},
+				"Trace": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 661,
+					"left": 29,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 59,
+					"left": 29,
+					"width": 800,
+					"height": 592,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"method": "ObjectMethods/information.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Next_Button": {
+					"type": "button",
+					"top": 118,
+					"left": 709,
+					"width": 165,
+					"height": 25,
+					"text": "Next Records",
+					"focusable": false,
+					"method": "ObjectMethods/Next_Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 50,
+					"left": 28,
+					"width": 840,
+					"height": 64,
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ShowValues": {
+					"type": "button",
+					"top": 118,
+					"left": 29,
+					"width": 165,
+					"height": 25,
+					"text": "Show values",
+					"focusable": false,
+					"method": "ObjectMethods/ShowValues.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ShowFormulas": {
+					"type": "button",
+					"top": 118,
+					"left": 191,
+					"width": 165,
+					"height": 25,
+					"text": "Show formulas",
+					"focusable": false,
+					"method": "ObjectMethods/ShowFormulas.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Guides": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 275
+}
